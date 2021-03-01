@@ -7,14 +7,13 @@ html {
 }
 
 #header {
-  padding: 10px 0 800px;
+  padding: 10px 0 500px;
   background-image: url("../images/130299488_294633208635997_1438005406249677827_n.jpg");
   background-position: 20%;
   margin-bottom: 90px;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  margin-top: -500px;
 }
 
 #header-session {
