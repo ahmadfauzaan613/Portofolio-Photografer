@@ -14,7 +14,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  width: img-fluid;
+  width: 100%;
 }
 
 #header-session {
