@@ -2,6 +2,8 @@ const menuButton = document.querySelector('[data-menu-button]');
 const menu = document.querySelector('[data-menu]');
 
 if (menuButton && menu) {
+  const mobileNavigation = window.matchMedia('(max-width: 760px)');
+
   const setMenuState = (isOpen) => {
     menuButton.setAttribute('aria-expanded', String(isOpen));
     menu.hidden = !isOpen;
@@ -17,8 +19,24 @@ if (menuButton && menu) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') setMenuState(false);
+    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+      setMenuState(false);
+      menuButton.focus();
+    }
   });
+
+  const syncNavigation = () => {
+    if (mobileNavigation.matches) {
+      setMenuState(false);
+    } else {
+      menu.hidden = false;
+      menuButton.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    }
+  };
+
+  mobileNavigation.addEventListener('change', syncNavigation);
+  syncNavigation();
 }
 
 const contactForm = document.querySelector('[data-contact-form]');

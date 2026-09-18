@@ -5,12 +5,26 @@
   <meta name="description" content="Contact Lee Photowork to discuss a photography session.">
   <title>Contact | Lee Photowork</title><link rel="icon" href="images/S__13467801-removebg-preview%201.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,400;6..96,500;6..96,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header"><div class="site-shell nav-wrap"><a class="wordmark" href="index.html">Lee Photowork<small>People in focus</small></a><button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation">Menu</button><nav id="site-navigation" class="site-nav" data-menu hidden aria-label="Primary navigation"><a href="index.html">Home</a><a href="session.html">Sessions</a><a href="about.html">About</a><a href="kontak.html" aria-current="page">Contact</a></nav></div></header>
-  <main id="main-content"><section class="site-shell section contact-grid" aria-labelledby="page-title"><div class="contact-copy"><p class="eyebrow">Contact</p><h1 id="page-title">Tell me what you want to remember.</h1><p>Share the kind of session you have in mind, where it might take place, and anything that would help shape the photographs.</p><aside><strong>Portfolio form</strong><br>This form validates your message in the browser. Email delivery has not been configured for this static site.</aside></div><form class="contact-form" data-contact-form novalidate><div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field"><label for="session">Session type</label><input id="session" name="session" placeholder="For example, family or couples" required></div><div class="field"><label for="message">A few details</label><textarea id="message" name="message" required></textarea></div><button class="button" type="submit">Check my message</button><p class="form-notice" data-form-notice tabindex="-1" hidden>Your message is complete. Email delivery is not configured for this portfolio prototype.</p></form></section></main>
-  <footer class="site-footer"><div class="site-shell footer-wrap"><p>Lee Photowork</p><p><a href="session.html">View session types</a></p></div></footer><script src="script/main.js"></script>
+  <header class="site-header"><div class="site-shell nav-wrap"><a class="wordmark" href="index.html" aria-label="Lee Photowork home"><span>Lee</span><small>Photowork</small></a><button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-navigation">Menu</button><nav id="site-navigation" class="site-nav" data-menu hidden aria-label="Primary navigation"><a href="index.html">Home</a><a href="foto.html">Work</a><a href="session.html">Sessions</a><a href="about.html">About</a><a href="kontak.html" aria-current="page">Contact</a></nav></div></header>
+  <main id="main-content">
+    <section class="contact-page">
+      <div class="site-shell contact-page__layout">
+        <div class="contact-page__heading"><p class="folio-label">Begin with a few details</p><h1 id="page-title">What would you<br><em>like to remember?</em></h1><p>Share the kind of session, the people involved, and where you imagine it taking place.</p><aside><strong>A note about this form</strong><br>The fields are validated in your browser. Email delivery is not connected on this static portfolio.</aside></div>
+        <form class="contact-form" data-contact-form novalidate aria-labelledby="page-title">
+          <div class="field field--split"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field field--split"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="session">Kind of session</label><input id="session" name="session" placeholder="Family, couples, wedding, or another idea" required></div>
+          <div class="field"><label for="message">What should I know?</label><textarea id="message" name="message" placeholder="Tell me about the people, place, and feeling you have in mind." required></textarea></div>
+          <button class="form-submit" type="submit">Check my message</button>
+          <p class="form-notice" data-form-notice tabindex="-1" hidden>Your message is complete. Email delivery is not connected to this portfolio yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer site-footer--dark"><div class="site-shell footer-wrap"><p class="footer-signature">Lee <em>Photowork</em></p><p>People, light, and the moments between.</p><a class="editorial-link editorial-link--light" href="session.html">View session types</a></div></footer><script src="script/main.js"></script>
 </body>
 </html>
