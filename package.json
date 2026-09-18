@@ -1,0 +1,16 @@
+{
+  "name": "lee-photowork",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A lightweight editorial photography portfolio.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "sass styles/main.scss styles/main.css --style=compressed --no-source-map",
+    "watch": "sass --watch styles/main.scss:styles/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.104.1"
+  }
+}
